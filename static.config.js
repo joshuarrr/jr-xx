@@ -1,10 +1,55 @@
-// This file is used to configure:
-// - static-site generation
-// - Document shell (index.html)
-// - ...tons of other things!
+import React, { Template } from 'react'
+//
 
-// Get started at https://react-static.js.org
 
 export default {
-  maxThreads: 1, // Remove this when you start doing any static generation
+  siteRoot: 'http://joshuar.com/',
+
+  getSiteData: async () => ({
+    title: 'JOSHUAR 🦁',
+  }),
+
+  devServer: {
+    port: 3000,
+    host: '127.0.0.1',
+  },
+
+  getRoutes: async () => [
+    {
+      path: '/',
+      template: 'src/containers/design',
+    },
+    {
+      path: 'design/hilights',
+      template: 'src/containers/design/hilights',
+    },
+    {
+      path: 'design/lumen',
+      template: 'src/containers/design/lumen',
+    },
+    {
+      path: 'design/idealist',
+      template: 'src/containers/design/idealist',
+    },
+    {
+      path: 'code',
+      template: 'src/containers/code',
+    },
+    {
+      path: 'about',
+      template: 'src/containers/about',
+    },
+    {
+      path: 'stories',
+      template: 'src/containers/stories',
+    },    
+    {
+      path: 'stories/aila',
+      template: 'src/containers/stories/aila.js',
+    },
+    {
+      path: '404',
+      template: 'src/containers/404',
+    },
+  ]
 }
