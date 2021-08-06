@@ -1,0 +1,176 @@
+{
+  "errors": [
+    "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js\nModule not found: Error: Can't resolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\nresolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\n  Parsed request is a module\n  using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n    resolve as module\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/node_modules doesn't exist or is not a directory\n      /Users/joshuar/node_modules doesn't exist or is not a directory\n      /Users/node_modules doesn't exist or is not a directory\n      /node_modules doesn't exist or is not a directory\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules\n        using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n          using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules\n        using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules)\n          using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/node_modules]\n[/Users/joshuar/.nvm/versions/node/node_modules]\n[/Users/joshuar/.nvm/versions/node_modules]\n[/Users/joshuar/.nvm/node_modules]\n[/Users/joshuar/node_modules]\n[/Users/node_modules]\n[/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json]\n @ multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js main[0]",
+    "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js\nModule not found: Error: Can't resolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\nresolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\n  Parsed request is a module\n  using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n    resolve as module\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/node_modules doesn't exist or is not a directory\n      /Users/joshuar/node_modules doesn't exist or is not a directory\n      /Users/node_modules doesn't exist or is not a directory\n      /node_modules doesn't exist or is not a directory\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules\n        using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n          using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules\n        using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules)\n          using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/node_modules]\n[/Users/joshuar/.nvm/versions/node/node_modules]\n[/Users/joshuar/.nvm/versions/node_modules]\n[/Users/joshuar/.nvm/node_modules]\n[/Users/joshuar/node_modules]\n[/Users/node_modules]\n[/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json]\n @ multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js main[1]",
+    "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js\nModule not found: Error: Can't resolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\nresolve 'react-hot-loader/webpack' in '/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules'\n  Parsed request is a module\n  using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n    resolve as module\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/v10.16.3/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/versions/node_modules doesn't exist or is not a directory\n      /Users/joshuar/.nvm/node_modules doesn't exist or is not a directory\n      /Users/joshuar/node_modules doesn't exist or is not a directory\n      /Users/node_modules doesn't exist or is not a directory\n      /node_modules doesn't exist or is not a directory\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules\n        using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules)\n          using description file: /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/package.json (relative path: ./node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack doesn't exist\n      looking for modules in /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules\n        using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules)\n          using description file: /Users/joshuar/.nvm/package.json (relative path: ./versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack)\n            no extension\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n            .js\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js doesn't exist\n            .json\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json doesn't exist\n            as directory\n              /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack doesn't exist\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/node_modules]\n[/Users/joshuar/.nvm/versions/node/node_modules]\n[/Users/joshuar/.nvm/versions/node_modules]\n[/Users/joshuar/.nvm/node_modules]\n[/Users/joshuar/node_modules]\n[/Users/node_modules]\n[/node_modules]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/node_modules/react-hot-loader/webpack.json]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.js]\n[/Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-hot-loader/webpack.json]\n @ multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js main[2]"
+  ],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "48752d2898a3c2281ddc",
+  "time": 390,
+  "builtAt": 1628140835531,
+  "publicPath": "/",
+  "outputPath": "/Users/joshuar/Projects/jr-xx/dist",
+  "assetsByChunkName": {
+    "main": "main.fef6307a.js"
+  },
+  "assets": [
+    {
+      "name": "main.fef6307a.js",
+      "size": 1486,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.fef6307a.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.fef6307a.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 52,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.fef6307a.js"
+      ],
+      "hash": "5a801a7ca461ed3ff7d5",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "multi /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapPlugins.js /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapTemplates.js /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapApp.js",
+          "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js",
+          "index": 0,
+          "index2": 0,
+          "size": 52,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "multi entry"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": null,
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "multi /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapPlugins.js /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapTemplates.js /Users/joshuar/.nvm/versions/node/v10.16.3/lib/node_modules/react-static/lib/bootstrapApp.js",
+      "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js",
+      "index": 0,
+      "index2": 0,
+      "size": 52,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "multi entry"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
