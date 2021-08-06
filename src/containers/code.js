@@ -33,7 +33,7 @@ class Code extends React.Component {
     console.log ('this.state.image', this.state.image1)
     return [
       <Head key="head">
-        <title>joshuar(HTML + CSS + JS)</title>
+        <title>joshuar — HTML + CSS + JS)</title>
       </Head>,
       <section key="content-code-projects" className="code projects">
         <CodeProject
@@ -42,13 +42,13 @@ class Code extends React.Component {
           codeUrl="https://raw.githubusercontent.com/joshuarrr/jr-xix/master/src/components/projects/code/imgGrid/imgGrid.js"
           ratio='16x9'
         >
-          {/* <ImgGrid
+          <ImgGrid
             url={this.state.image1}
             ratio='16x9'
             duration='.5s'
             className="rounded bordered"
             cloudinary
-          /> */}
+          />
         </CodeProject>
         <CodeProject
           title="ImgLoad"

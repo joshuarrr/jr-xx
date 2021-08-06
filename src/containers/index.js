@@ -5,7 +5,7 @@ import { Head } from 'react-static'
 export default () => [
   <Head key="head">
     <meta charSet="UTF-8" />
-    <title>joshuar(design)</title>
+    <title>joshuar</title>
   </Head>,
   <div key="design-page">
     <p>Index</p>

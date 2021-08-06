@@ -12,7 +12,7 @@ import'../styles/stories.css'
 
 export default () => [
   <Head key="head">
-    <title>joshuar(stories)</title>
+    <title>joshuar — stories</title>
   </Head>,
   <section key="content" className="story content">
     <h1>Stories</h1>

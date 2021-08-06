@@ -92,6 +92,7 @@ class ImgLoad extends React.Component {
         </div>
 
       const imageLoad = () => {
+        if (this.state.loaded) return;
         this.setState({
           loaded: true
         })

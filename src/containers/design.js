@@ -18,7 +18,7 @@ import '../styles/projects.css'
 
 export default () => [
   <Head key="head">
-    <title>joshuar(product design)</title>
+    <title>joshuar — product design</title>
   </Head>,
 
   <section key="design-projects" className="design projects">

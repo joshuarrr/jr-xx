@@ -11,7 +11,7 @@ import'../styles/about.css'
 
 export default () => [
   <Head key="head">
-    <title>joshuar(about)</title>
+    <title>joshuar — about</title>
   </Head>,
   <section key="content" className="about content">
     <div className="profile-pic-wrapper">
