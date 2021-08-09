@@ -49,7 +49,7 @@ class CodeProject extends React.Component {
         <div
           className="code-project"
           style={{
-            paddingBottom: this.getAspectRatio()
+            paddingBottom: '55%'
           }}
         >
           {
@@ -84,21 +84,6 @@ class CodeProject extends React.Component {
         </div>
       </section>
     )
-  }
-
-  getAspectRatio = () => {
-    const computeRatio = (ratio) => {
-      const w = parseInt(ratio.toString().split("x")[0]) // before x
-      const h = parseInt(ratio.toString().split("x")[1]) // after x
-      const aspectRatio = w && h
-        ? `${((h / w) * 100).toFixed(2)}%`
-        : console.log("Incorrect ratio prop")
-      return aspectRatio
-    }
-    const ratio = this.props.ratio && this.props.ratio.length
-      ? computeRatio(this.props.ratio)
-      : null
-    return ratio
   }
 
   loadCodeAsText = (codeUrl) => {

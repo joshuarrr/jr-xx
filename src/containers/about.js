@@ -26,8 +26,8 @@ export default () => [
     </div>
     <section className="bio">
       <p>Joshua Richey is a product strategist, user experience designer, and front-end developer with > 14 years of experience conceiving, researching, designing, and building digital tools for human use. He currently helps Aclima build interfaces that visualize air pollution at a hyperlocal level.</p>
-      <p>In a definitively non-cheesy way, Joshua is deeply motivated by change-making and world-saving. He previously led design at Idealist.org (an international jobs board for nonprofits), where he spearheaded human-centered design efforts, built a scalable design system, and rewrote the front end using htlm5, sass / postCSS, and react.</p>
-      <p>Prior, he ran his own company, Cohesive Branding, where he led the design of brand, print, and interactive products for Pink Floyd, Skydance Entertainment, and the Grand Canyon (which he thinks is kinda neat).</p>
+      <p>Motivated by change-making and world-saving, he previously led design at Idealist.org (an international jobs board for nonprofits), where he spearheaded human-centered design efforts, instituted a scalable design system, and rewrote the front end using htlm5, sass + postCSS, and react.</p>
+      <p>Prior, he ran a small consultancy where he led a team of designers and developers through the design and implemmentation of brand, print, and interactive experiences. He has designed products for Pink Floyd, Skydance Entertainment, and the Grand Canyon.</p>
       <p>When not in front of his screen, he’s probably out walking around with his dog. When in front of the screen, he probably looks like this:</p>
       <div className="working-pic-wrapper">
         <ImgLoad

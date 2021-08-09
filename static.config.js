@@ -21,6 +21,10 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
+      template: 'src/containers/about',
+    },
+    {
+      path: 'design',
       template: 'src/containers/design',
     },
     {
@@ -38,10 +42,6 @@ export default {
     {
       path: 'code',
       template: 'src/containers/code',
-    },
-    {
-      path: 'about',
-      template: 'src/containers/about',
     },
     {
       path: 'stories',

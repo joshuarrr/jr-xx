@@ -18,7 +18,7 @@ export default () => [
     <h1>Stories</h1>
     <ul>
       <li>As We Come So We Go</li>
-      <li><Link to="./aila">Aila, The Winged Unicorn</Link></li>
+      <li><Link to="stories/aila">Aila, The Winged Unicorn</Link></li>
     </ul>
   </section>
 ]
