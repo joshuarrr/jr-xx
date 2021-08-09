@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Routes } from 'react-static'
-import MediaQuery from 'react-responsive';
+import MediaQuery from 'react-responsive'
 
 // components
 import Header from '../header/'
@@ -9,15 +9,18 @@ import Nav from '../nav/'
 import Controls from '../controls/'
 //
 
+import LoadingIndicator from '../loadingIndicator/'
 
-// console.log(Routes)
+
 class Grid extends Component {
   render = () => [
     <MediaQuery key="mobile" query="(max-width: 1024px)">
       <div className="mobile">
         <Header />
         <main className="main">
-          <React.Suspense fallback={<span>Loading...</span>}><Routes /></React.Suspense>
+          <React.Suspense fallback={<LoadingIndicator />}>
+            <Routes />
+          </React.Suspense>
         </main>
         <Footer />
         <Controls controls={['toggle-mode', 'toggle-fullscreen', 'toggle-color']} />
@@ -31,7 +34,9 @@ class Grid extends Component {
           <Footer />
         </div>
         <main className="main">
-        <React.Suspense fallback={<span>Loading...</span>}><Routes /></React.Suspense>
+        <React.Suspense fallback={<LoadingIndicator />}>
+          <Routes />
+        </React.Suspense>
         </main>
         <div className="right-column">
           <Controls controls={['toggle-mode', 'toggle-fullscreen', 'toggle-color']} />

@@ -21,7 +21,6 @@ html {
 body {
   color: var(--body-text-color);
   font-size: 1.3rem;
-  letter-spacing: .03rem;
   line-height: 1.75;
 }
 
@@ -61,11 +60,10 @@ ol {
   padding: 0;
 }
 
-
 .desktop,
 .desktop h1 {
   font-size: 1.5rem;
-  letter-spacing: .15rem;
+  letter-spacing: .05rem;
   line-height: 2;
 }
 

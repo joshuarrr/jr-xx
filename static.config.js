@@ -14,6 +14,10 @@ export default {
     host: '127.0.0.1',
   },
 
+  plugins: [
+    'react-static-plugin-reach-router'
+  ],
+
   getRoutes: async () => [
     {
       path: '/',
