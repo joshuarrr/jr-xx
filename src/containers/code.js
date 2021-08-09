@@ -15,7 +15,6 @@ const images = [
   'jr-xix/projects/conquer',
   'jr-xix/projects/santa-monica',
   'jr-xix/projects/birds',
-  'jr-xix/projects/nature',
   'adia',
   'mask',
   'paint',
