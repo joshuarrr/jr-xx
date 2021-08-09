@@ -13,8 +13,10 @@ export default {
   },
 
   plugins: [
-    'react-static-plugin-reach-router'
+    'react-static-plugin-reach-router',
   ],
+
+  siteRoot: "/",
 
   getRoutes: async () => [
     {
