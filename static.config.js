@@ -3,7 +3,7 @@ import React, { Template } from 'react'
 
 
 export default {
-  siteRoot: 'https://joshuar.com/',
+  // siteRoot: 'https://joshuar.com/',
 
   getSiteData: async () => ({
     title: 'JOSHUAR 🦁',
