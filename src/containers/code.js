@@ -5,7 +5,7 @@ import { Head } from 'react-static'
 import ScrollButton from '../components/scrollToTop/'
 import CodeProject from '../components/codeProject/'
 import ImgLoad from '../components/projects/code/imgLoad/'
-// import ImgGrid from '../components/projects/code/imgGrid/'
+import ImgGrid from '../components/projects/code/imgGrid/'
 
 // utils
 import { chooseFrom } from '../utils'
@@ -18,9 +18,10 @@ class Code extends React.Component {
 
     // cloudinary images
     const images = [
-      'jr-xix/projects/conquer',
-      'jr-xix/projects/santa-monica',
-      'jr-xix/projects/birds',
+      // 'jr-xix/projects/conquer',
+      // 'jr-xix/projects/santa-monica',
+      // 'jr-xix/projects/birds',
+      'adia',
     ]
 
     this.state = {
@@ -44,12 +45,13 @@ class Code extends React.Component {
         >
           <ImgGrid
             url={this.state.image1}
-            ratio='16x9'
+            ratio='16x10'
             duration='.5s'
             className="rounded bordered"
             cloudinary
           />
         </CodeProject>
+
         <CodeProject
           title="ImgLoad"
           description="React image loader."

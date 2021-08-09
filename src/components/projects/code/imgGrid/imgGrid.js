@@ -7,7 +7,7 @@
   */
 
 import React from 'react'
-import Palette from 'react-palette'
+import {Palette} from 'react-palette'
 
 // components
 import ImgLoad from '../imgLoad'
@@ -38,36 +38,22 @@ class ImgGrid extends React.Component {
       ref={this.imageGrid}
       className="img-grid-wrapper"
     >
-      { this.state.loaded &&
-        <Palette image={this.state.imgUrl}>
-          {palette => (
-            <GridCells color={palette.vibrant} node={this.imageGrid} ratio />
+       {this.state.loaded &&
+        <Palette src={this.state.imgUrl}>
+          {( {data} ) => (
+            data && <GridCells color={data.vibrant} node={this.imageGrid} ratio />
           )}
         </Palette>
       }
       {this.renderImg()}
     </div>
 
-  getAspectRatio = () => {
-    const computeRatio = (ratio) => {
-      const w = parseInt(ratio.toString().split("x")[0]) // before x
-      const h = parseInt(ratio.toString().split("x")[1]) // after x
-      const aspectRatio = w && h
-        ? `${((h / w) * 100).toFixed(2)}%`
-        : console.log("Incorrect ratio prop")
-      return aspectRatio
-    }
-
-    const ratio = this.props.ratio && this.props.ratio.length
-      ? computeRatio(this.props.ratio)
-      : null
-
-    return ratio
-  }
-
   renderImg = () =>
     <ImgLoad {...this.props}
       imgLoaded ={src => {
+        if (this.state.loaded) {
+          return
+        }
         this.setState({
           loaded: true,
           imgUrl: src
