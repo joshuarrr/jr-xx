@@ -102,3 +102,11 @@
   justify-content: flex-end;
   margin: calc(var(--trailer) / 2) ;
 }
+
+
+.force  {
+  position: absolute;
+  left: 3rem;
+  bottom: -5rem;
+  z-index: 30000;
+}

@@ -57,7 +57,7 @@ const images = [
             className="rounded bordered"
             cloudinary
           />
-          <button className="code-refresh" onClick={() => this.getImg('image1')}>Refresh</button>
+          {/* <button className="code-refresh" onClick={() => this.getImg('image1')}>Refresh</button> */}
         </CodeProject>
 
         <CodeProject
@@ -73,7 +73,7 @@ const images = [
             className="rounded bordered"
             cloudinary
           />
-          <button className="code-refresh" onClick={() => this.getImg('image2')}>Refresh</button>
+          {/* <button className="code-refresh" onClick={() => this.getImg('image2')}>Refresh</button> */}
         </CodeProject>
       </section>,
       <ScrollButton

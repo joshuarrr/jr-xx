@@ -46,6 +46,7 @@ class ImgLoad extends React.Component {
 
     this.state = {
       loaded: false,
+      reload: 0
     }
   }
 
@@ -64,6 +65,13 @@ class ImgLoad extends React.Component {
         this.setState({loaded: false});
       });
     }
+  }
+
+  update = () => {
+    this.setState({
+      reload: this.state.reload++
+    })
+    console.log('click')
   }
 
   render = () => {
@@ -128,18 +136,21 @@ class ImgLoad extends React.Component {
         />
 
     return (
-      <div
-        className={`image-loader ${this.props.className}`}
-        key="image-loader"
-        style={{
-          paddingBottom: this.getAspectRatio()
-        }}
-      >
-        {showLoadingIndicator}
-        {showLoadingMessage}
-        {showImage}
-        {showControls}
-      </div>
+      <>
+        <button className="force" onClick={this.update}>force</button>
+        <div
+          className={`image-loader ${this.props.className}`}
+          key="image-loader"
+          style={{
+            paddingBottom: this.getAspectRatio()
+          }}
+        >
+          {showLoadingIndicator}
+          {showLoadingMessage}
+          {showImage}
+          {showControls}
+        </div>
+      </>
     )
   }
 
