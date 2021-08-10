@@ -1,7 +1,7 @@
 /* <> Code Project ************************************************************/
 .code-project {
   border-radius: var(--border-radius);
-  box-shadow: 0 0 0 1px var(--border-gray);
+  /* box-shadow: 0 0 0 1px var(--border-gray); */
   position: relative;
 }
 
@@ -33,6 +33,21 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+.code-refresh  {
+  position: absolute;
+  right: 7rem;
+  bottom: -5.1rem;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: var(--green);
+  font-size: 115%;
 }
 
 .desktop .code-toggle {

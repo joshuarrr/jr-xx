@@ -13,7 +13,6 @@
     className: add a class
     loadingMessage: display a message while loading
     indicator: display a component while loading
-    controls:  show controls to adjust props
     cloudinary: use cloudinary component instead of img
   */
 
@@ -33,7 +32,7 @@ class ImgLoad extends React.Component {
     url: null,
     ratio: null,
     fade: true,
-    duration: '.5s',
+    duration: '2s',
     className: '',
     indicator: true,
     loadingMessage: null,
@@ -46,6 +45,7 @@ class ImgLoad extends React.Component {
 
     this.state = {
       loaded: false,
+      reload: 0
     }
   }
 
@@ -66,6 +66,13 @@ class ImgLoad extends React.Component {
     }
   }
 
+  componentDidUpdate = (before) => {
+    if (before.url !== this.props.url) {
+      this.setState({loaded: false})
+      console.log("unoadeded")
+    }
+  }
+
   render = () => {
     const imgStyles = this.props.fade
       ? {
@@ -83,13 +90,6 @@ class ImgLoad extends React.Component {
          ? <p className="loading-message">{this.props.loadingMessage}</p>
          : null
        : null
-
-      const showControls = this.props.showControls &&
-        <div className="image-loader-controls">
-          <button onClick={this.reloadImage}>
-            rerender
-          </button>
-        </div>
 
       const imageLoad = () => {
         if (this.state.loaded) return;
@@ -138,7 +138,7 @@ class ImgLoad extends React.Component {
         {showLoadingIndicator}
         {showLoadingMessage}
         {showImage}
-        {showControls}
+        {/* {showControls} */}
       </div>
     )
   }
