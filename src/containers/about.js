@@ -2,12 +2,12 @@ import React from 'react'
 import { Head } from 'react-static'
 
 // components
+import ScrollButton from '../components/scrollToTop/'
 import ImgLoad from '../components/projects/code/imgLoad/'
 
 // styles
 import'../styles/about.css'
 //
-
 
 export default () => [
   <Head key="head">
@@ -40,5 +40,11 @@ export default () => [
         />
       </div>
     </section>
-  </section>
+  </section>,
+  <ScrollButton
+    key="scroll-button"
+    scrollStepInPx="50"
+    delayInMs="16.66"
+  />
+  
 ]
