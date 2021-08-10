@@ -33,7 +33,7 @@ class ImgLoad extends React.Component {
     url: null,
     ratio: null,
     fade: true,
-    duration: '.5s',
+    duration: '2s',
     className: '',
     indicator: true,
     loadingMessage: null,
@@ -143,21 +143,18 @@ class ImgLoad extends React.Component {
         />
 
     return (
-      <>
-        <button className="force" onClick={this.update}>force</button>
-        <div
-          className={`image-loader ${this.props.className}`}
-          key="image-loader"
-          style={{
-            paddingBottom: this.getAspectRatio()
-          }}
-        >
-          {showLoadingIndicator}
-          {showLoadingMessage}
-          {showImage}
-          {showControls}
-        </div>
-      </>
+      <div
+        className={`image-loader ${this.props.className}`}
+        key="image-loader"
+        style={{
+          paddingBottom: this.getAspectRatio()
+        }}
+      >
+        {showLoadingIndicator}
+        {showLoadingMessage}
+        {showImage}
+        {showControls}
+      </div>
     )
   }
 
