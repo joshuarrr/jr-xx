@@ -33,6 +33,13 @@ class ImgGrid extends React.Component {
     }
   }
 
+  componentDidUpdate = (before) => {
+    if (before.url !== this.props.url) {
+      this.setState({loaded: false})
+      console.log("unoadeded")
+    }
+  }  
+
   render = () =>
     <div
       ref={this.imageGrid}

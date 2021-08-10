@@ -32,10 +32,16 @@ const images = [
     }
   }
 
-  getImg = (img) => {
-    this.setState({
-      [img]: chooseFrom(images)
-    })
+  handleReload = (img) => {
+    this.setState( prevState => ({
+      [img]: null
+    }));
+    
+    setTimeout( () => {
+      this.setState( prevState => ({
+        [img]: chooseFrom(images)
+      }));
+    }, 1000);
   }
 
   render = () => {
@@ -57,7 +63,7 @@ const images = [
             className="rounded bordered"
             cloudinary
           />
-          <button className="code-refresh" onClick={() => this.getImg('image1')}>Refresh</button>
+          <button className="code-refresh" onClick={() => this.handleReload('image1')}> &#10227; </button>
         </CodeProject>
 
         <CodeProject
@@ -74,7 +80,7 @@ const images = [
             cloudinary
             indicator
           />
-          <button className="code-refresh" onClick={() => this.getImg('image2')}>Refresh</button>
+          <button className="code-refresh" onClick={() => this.handleReload('image2')}> &#10227; </button>
         </CodeProject>
       </section>,
       <ScrollButton
