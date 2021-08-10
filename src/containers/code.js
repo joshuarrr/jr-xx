@@ -22,19 +22,19 @@ const images = [
  ]
 
  const images2 = [
-  // 'jr-xix/projects/conquer',
-  // 'jr-xix/projects/santa-monica',
-  // 'jr-xix/projects/birds',
-  // 'adia',
-  // 'mask',
-  // 'paint',
-  // 'drop',
-  // 'deepestBlue',
-  // 'Flyboys-01',
+  'jr-xix/projects/conquer',
+  'jr-xix/projects/santa-monica',
+  'jr-xix/projects/birds',
+  'adia',
+  'mask',
+  'paint',
+  'drop',
+  'deepestBlue',
+  'Flyboys-01',
   'pink-floyd-cal-front',
-  // 'pink-floyd-cal-back',
-  // 'CCA2',
-  // 'polar-express-01',
+  'pink-floyd-cal-back',
+  'CCA2',
+  'polar-express-01',
  ] 
 
  class Code extends React.Component {
@@ -76,11 +76,11 @@ const images = [
           title="React Grid Thing"
           description="Pretty squares... This experiment grabs a color pallet from an image to overlay a shifting sea of squares. Reload to see a different photo."
           codeUrl="https://raw.githubusercontent.com/joshuarrr/jr-xx/master/src/components/projects/code/imgGrid/imgGrid.js"
-          ratio='16x10'
+          ratio='16x9'
         >
           <ImgGrid
             url={this.state.image1}
-            ratio='16x10'
+            ratio='16x9'
             duration='0.5s'
             className="rounded bordered"
             cloudinary

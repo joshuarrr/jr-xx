@@ -34,8 +34,8 @@ class GridCells extends React.Component {
       ? w / 10
       : w / 20
 
-    const rows =  Math.round(w / cellSize)
-    const cols =  Math.round(h / cellSize)
+    const rows =  Math.ceil(h / cellSize)
+    const cols =  Math.ceil(w / cellSize)
 
     this.setState({
       rows,
