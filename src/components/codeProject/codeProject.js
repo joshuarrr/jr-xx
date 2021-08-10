@@ -4,6 +4,9 @@ import React from 'react'
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
 
+// utils
+import { parseAspectRatio } from '../../utils'
+
 // styles
 import './code-project.css'
 //
@@ -28,6 +31,8 @@ class CodeProject extends React.Component {
       this.loadCodeAsText(this.props.codeUrl)
     }
   }
+
+
   
   render = () => {
     const { error, isLoaded, text } = this.state;
@@ -48,8 +53,8 @@ class CodeProject extends React.Component {
         <div
           className="code-project"
           style={{
-            paddingBottom: '55%'
-          }}
+          paddingBottom: parseAspectRatio(this.props.ratio) + '%'
+        }}
         >
           {
           this.props.codeUrl &&
@@ -107,6 +112,5 @@ class CodeProject extends React.Component {
       )
   }
 }
-
 
 export default CodeProject;

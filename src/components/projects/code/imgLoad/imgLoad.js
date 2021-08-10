@@ -17,7 +17,10 @@
   */
 
 import React from 'react'
-import { Image } from 'cloudinary-react'
+import { Image, Transformation } from 'cloudinary-react'
+
+// utils
+import { parseAspectRatio } from '../../../../utils'
 
 // styles
 import './imgLoad.css'
@@ -73,6 +76,7 @@ class ImgLoad extends React.Component {
     }
   }
 
+
   render = () => {
     const imgStyles = this.props.fade
       ? {
@@ -106,7 +110,6 @@ class ImgLoad extends React.Component {
           publicId={this.props.url}
           width="auto"
           dpr="auto"
-          crop="scale"
           progressive="false"
           f_auto="true"
           secure
@@ -119,7 +122,10 @@ class ImgLoad extends React.Component {
             imageLoad()
           }}
           style={imgStyles}
-        />
+        >
+          <Transformation aspectRatio={parseAspectRatio(this.props.ratio, 'c')} crop="fill"  />
+        </Image>
+        
       : <img
           alt=""
           src={this.props.url}
@@ -132,7 +138,7 @@ class ImgLoad extends React.Component {
         className={`image-loader ${this.props.className}`}
         key="image-loader"
         style={{
-          paddingBottom: this.getAspectRatio()
+          paddingBottom: parseAspectRatio(this.props.ratio) + '%'
         }}
       >
         {showLoadingIndicator}
@@ -156,21 +162,6 @@ class ImgLoad extends React.Component {
     /* image to load */
     img.src = this.props.url
   })
-
-  getAspectRatio = () => {
-    const computeRatio = (ratio) => {
-      const w = parseInt(ratio.toString().split("x")[0]) // before x
-      const h = parseInt(ratio.toString().split("x")[1]) // after x
-      const aspectRatio = w && h
-        ? `${((h / w) * 100).toFixed(2)}%`
-        : console.log("Incorrect ratio prop")
-      return aspectRatio
-    }
-    const ratio = this.props.ratio && this.props.ratio.length
-      ? computeRatio(this.props.ratio)
-      : null
-    return ratio
-  }
 }
 
 export default React.forwardRef((props, ref) => <ImgLoad {...props} imgRef={ref}/>)

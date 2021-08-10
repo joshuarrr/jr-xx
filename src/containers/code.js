@@ -21,13 +21,29 @@ const images = [
   'drop',
  ]
 
+ const images2 = [
+  // 'jr-xix/projects/conquer',
+  // 'jr-xix/projects/santa-monica',
+  // 'jr-xix/projects/birds',
+  // 'adia',
+  // 'mask',
+  // 'paint',
+  // 'drop',
+  // 'deepestBlue',
+  // 'Flyboys-01',
+  'pink-floyd-cal-front',
+  // 'pink-floyd-cal-back',
+  // 'CCA2',
+  // 'polar-express-01',
+ ] 
+
  class Code extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
       image1: chooseFrom(images),
-      image2: chooseFrom(images),
+      image2: chooseFrom(images2),
       reload: 0,
     }
   }
@@ -38,10 +54,16 @@ const images = [
     }));
     
     setTimeout( () => {
-      this.setState( prevState => ({
-        [img]: chooseFrom(images)
-      }));
-    }, 1000);
+      if (img === 'image1') {
+        this.setState( prevState => ({
+          [img]: chooseFrom(images)
+        }))
+        } else if (img === 'image2') {
+          this.setState( prevState => ({
+            [img]: chooseFrom(images2)
+          }))        
+        }
+    }, 750);
   }
 
   render = () => {
@@ -54,12 +76,12 @@ const images = [
           title="React Grid Thing"
           description="Pretty squares... This experiment grabs a color pallet from an image to overlay a shifting sea of squares. Reload to see a different photo."
           codeUrl="https://raw.githubusercontent.com/joshuarrr/jr-xx/master/src/components/projects/code/imgGrid/imgGrid.js"
-          ratio='16x9'
+          ratio='16x10'
         >
           <ImgGrid
             url={this.state.image1}
             ratio='16x10'
-            duration='.5s'
+            duration='0.5s'
             className="rounded bordered"
             cloudinary
           />
@@ -70,11 +92,11 @@ const images = [
           title="ImgLoad"
           description="React image loader. Gracefully adds an image to the dom, using aspect ratios to presize and transitions to fade in."
           codeUrl="https://raw.githubusercontent.com/joshuarrr/jr-xx/master/src/components/projects/code/imgLoad/imgLoad.js"
-          ratio='16x9'
+          ratio='9x6'
         >
           <ImgLoad
             url={this.state.image2}
-            ratio='16x9'
+            ratio='9x6'
             duration='0.5s'
             className="rounded bordered"
             cloudinary
