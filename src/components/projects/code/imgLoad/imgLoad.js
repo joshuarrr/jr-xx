@@ -74,6 +74,13 @@ class ImgLoad extends React.Component {
     console.log('click')
   }
 
+  componentDidUpdate = (before) => {
+    if (before.url !== this.props.url) {
+      this.setState({loaded: false})
+      console.log("unoadeded")
+    }
+  }
+
   render = () => {
     const imgStyles = this.props.fade
       ? {
