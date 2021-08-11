@@ -4,7 +4,6 @@ import React from 'react'
 import './scrollToTop.css'
 //
 
-
 class ScrollButton extends React.Component {
   constructor() {
     super();

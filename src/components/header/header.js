@@ -7,7 +7,6 @@ import NavLink from '../navlink/'
 
 // styles
 import './header.css'
-//
 
 
 export default () =>

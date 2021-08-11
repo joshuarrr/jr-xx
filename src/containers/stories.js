@@ -7,7 +7,6 @@ import ImgLoad from '../components/projects/code/imgLoad/'
 
 // styles
 import'../styles/stories.css'
-//
 
 
 export default () => [

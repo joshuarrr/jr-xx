@@ -7,25 +7,25 @@ import Header from '../header/'
 import Footer from '../footer/'
 import Nav from '../nav/'
 import Controls from '../controls/'
-//
+
 
 import LoadingIndicator from '../loadingIndicator/'
 
-
-class Grid extends Component {
-  render = () => [
-    <MediaQuery key="mobile" query="(max-width: 1024px)">
+export default function grid() {
+  return (
+    <>
+      <MediaQuery key="mobile" query="(max-width: 1024px)">
       <div className="mobile">
         <Header />
         <main className="main">
           <React.Suspense fallback={<LoadingIndicator />}>
-            <Routes />
+            <Routes default />
           </React.Suspense>
         </main>
         <Footer />
         <Controls controls={['toggle-mode', 'toggle-fullscreen', 'toggle-color']} />
       </div>
-    </MediaQuery>,
+    </MediaQuery>
     <MediaQuery key="desktop" query="(min-width: 1025px)">
       <div className="desktop grid">
         <div className="left-column">
@@ -35,7 +35,7 @@ class Grid extends Component {
         </div>
         <main className="main">
         <React.Suspense fallback={<LoadingIndicator />}>
-          <Routes />
+          <Routes default />
         </React.Suspense>
         </main>
         <div className="right-column">
@@ -43,8 +43,6 @@ class Grid extends Component {
         </div>
       </div>
     </MediaQuery>
-  ]
+    </>
+  )
 }
-
-
-export default (Grid)

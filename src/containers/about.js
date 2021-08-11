@@ -7,7 +7,7 @@ import ImgLoad from '../components/projects/code/imgLoad/'
 
 // styles
 import'../styles/about.css'
-//
+
 
 export default () => [
   <Head key="head">

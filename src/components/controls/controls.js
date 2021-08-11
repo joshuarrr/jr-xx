@@ -2,7 +2,6 @@ import React from 'react'
 
 // styles
 import './controls.css'
-//
 
 
 class Controls extends React.Component {

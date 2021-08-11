@@ -1,4 +1,4 @@
-/* utity functions *./
+/* utity functions */
 
 /* return a random number from an array */
 export const randomIndexOf = (arr) => Math.floor(Math.random() * arr.length)
@@ -6,9 +6,11 @@ export const randomIndexOf = (arr) => Math.floor(Math.random() * arr.length)
 /* return an item from an array */
 export const chooseFrom = (arr) => arr[randomIndexOf(arr)]
 
-/* Random image */
+/* get a random image */
 export const getRandomImage = (arr) => chooseFrom(arr)
 
+/* parse the ratio prop as a percentage
+   if c argument is present, format for cloudinary */
 export const parseAspectRatio = (r, c) => {
   const computeRatio = (r) => {
     const w = parseInt(r.toString().split("x")[0]) // before x

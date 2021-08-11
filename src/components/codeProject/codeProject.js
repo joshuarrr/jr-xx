@@ -13,6 +13,7 @@ import './code-project.css'
 
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 
+
 class CodeProject extends React.Component {
   constructor(props) {
     super(props)
@@ -31,9 +32,7 @@ class CodeProject extends React.Component {
       this.loadCodeAsText(this.props.codeUrl)
     }
   }
-
-
-  
+ 
   render = () => {
     const { error, isLoaded, text } = this.state;
     if (error) {
@@ -45,9 +44,7 @@ class CodeProject extends React.Component {
     }
 
     return (
-      <section
-        className="project-summary"
-      >
+      <section className="project-summary">
         <h1>{`/* ${this.props.title} */`}</h1>
         <p>{this.props.description}</p>
         <div
@@ -95,21 +92,21 @@ class CodeProject extends React.Component {
 
   loadCodeAsText = (codeUrl) => {
     fetch(codeUrl)
-      .then(res => res.text())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            text: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      )
+    .then(res => res.text())
+    .then(
+      (result) => {
+        this.setState({
+          isLoaded: true,
+          text: result
+        });
+      },
+      (error) => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      }
+    )
   }
 }
 

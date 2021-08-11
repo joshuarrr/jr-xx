@@ -13,7 +13,6 @@ import Idealist from './design/idealist'
 
 // styles
 import '../styles/projects.css'
-//
 
 
 export default () => [
